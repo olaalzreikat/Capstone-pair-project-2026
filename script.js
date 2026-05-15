@@ -257,10 +257,25 @@ window.onload = function () {
       });
     });
 
-    localStorage.setItem('kimi_outfit', JSON.stringify({
+    localStorage.setItem('outfit_data', JSON.stringify({
       baseSrc: document.getElementById('base').getAttribute('src'),
       items
     }));
+
+    const baseEl = document.getElementById('base');
+    const br = baseEl.getBoundingClientRect();
+    const offCanvas = document.createElement('canvas');
+    offCanvas.width = br.width;
+    offCanvas.height = br.height;
+    const offCtx = offCanvas.getContext('2d');
+    offCtx.drawImage(baseEl, 0, 0, br.width, br.height);
+    const clothingEls = Array.from(document.querySelectorAll('.container > .draggable'));
+    clothingEls.sort((a, b) => (parseInt(a.style.zIndex) || 0) - (parseInt(b.style.zIndex) || 0));
+    for (const el of clothingEls) {
+      const er = el.getBoundingClientRect();
+      offCtx.drawImage(el, er.left - br.left, er.top - br.top, er.width, er.height);
+    }
+    try { localStorage.setItem('outfit_sprite', offCanvas.toDataURL('image/png')); } catch(e) {}
 
     const saveBtn = document.getElementById('save-btn');
     saveBtn.textContent = 'Saved!';
