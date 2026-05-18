@@ -18,124 +18,96 @@
       <div class="tab-bar">
         <button class="tab-btn active" data-tab="pokemon" style="position:relative;overflow:visible;"><img src="poksy.png" alt="" style="position:absolute;top:-38px;left:4px;height:52px;width:auto;pointer-events:none;z-index:20;" />Pokemon</button>
         <button class="tab-btn" data-tab="strawberry">Strawberry Shortcake</button>
-        <button class="tab-btn" data-tab="gachiakuta">Gachiakuta</button>
-        <button class="tab-btn" data-tab="doremi">Magical Doremi</button>
       </div>
-      <div class="menu-board"><img src="pokm.png" alt="" style="position:absolute;top:4px;left:20px;height:62px;pointer-events:none;z-index:2;" /></div>
-      <div class="menu-board-right"></div>
+      <div class="menu-board">
+        <img src="pokm.png" alt="" style="position:absolute;top:4px;left:20px;height:62px;pointer-events:none;z-index:2;" />
+<img src="pokballBorder.png" class="corner-ball corner-tl" alt="" />
+        <img src="pokballBorder.png" class="corner-ball corner-tr" alt="" />
+        <img src="pokballBorder.png" class="corner-ball corner-bl" alt="" />
+        <img src="pokballBorder.png" class="corner-ball corner-br" alt="" />
+      </div>
+      <div class="menu-board-right">
+        <img src="pokballBorder.png" class="corner-ball corner-tl" alt="" />
+        <img src="pokballBorder.png" class="corner-ball corner-tr" alt="" />
+        <img src="pokballBorder.png" class="corner-ball corner-bl" alt="" />
+        <img src="pokballBorder.png" class="corner-ball corner-br" alt="" />
+      </div>
       <img src="base1.PNG" id="base" class="base" alt="base" />
 <div class="hair-wrapper">
   <button class="hair-arrow" id="hair-prev">&#8249;</button>
   <button class="hair-arrow" id="hair-next">&#8250;</button>
-  <!-- Pokemon hair -->
   <img src="pokhair1.PNG" class="hair-item draggable active" data-tab="pokemon" alt="pokhair1" />
   <img src="pokhair2.PNG" class="hair-item draggable" data-tab="pokemon" alt="pokhair2" />
   <img src="pokhair3.PNG" class="hair-item draggable" data-tab="pokemon" alt="pokhair3" />
-  <!-- Strawberry Shortcake hair -->
-  <!-- <img src="ss/hair1.png" class="hair-item draggable" data-tab="strawberry" alt="ss-hair1" /> -->
-  <!-- Gachiakuta hair -->
-  <!-- <img src="g/hair1.png" class="hair-item draggable" data-tab="gachiakuta" alt="g-hair1" /> -->
-  <!-- Magical Doremi hair -->
-  <!-- <img src="md/hair1.png" class="hair-item draggable" data-tab="doremi" alt="md-hair1" /> -->
+  <img src="pokhair4.PNG" class="hair-item draggable" data-tab="pokemon" alt="pokhair4" />
+  <img src="strawhair1.PNG" class="hair-item draggable" data-tab="strawberry" data-scale="0.72" data-scale-origin="top center" data-snap-x="0.51" data-snap-y="0.001"  alt="strawhair1" />
+  <img src="strawhair2.PNG" class="hair-item draggable" data-tab="strawberry" data-scale="0.75" data-scale-origin="top center" data-snap-x="0.5"  data-snap-y="0.01" alt="strawhair2" />
+  <img src="strawhair3.PNG" class="hair-item draggable" data-tab="strawberry" data-scale="0.72" data-scale-origin="top center" data-snap-x="0.55" data-snap-y="-0.08" alt="strawhair3" />
+  <img src="strawhair4.PNG" class="hair-item draggable" data-tab="strawberry" data-scale="0.86" data-scale-origin="top center" data-snap-x="0.5"data-snap-y="0.01" alt="strawhair4" />
+  <img src="strawhair5.PNG" class="hair-item draggable" data-tab="strawberry" data-scale="0.80" data-scale-origin="top center" data-snap-x="0.49"  data-snap-y="0.01" alt="strawhair5" />
+  <img src="strawhair6.PNG" class="hair-item draggable" data-tab="strawberry" data-scale="0.80" data-scale-origin="top center" data-snap-x="0.49" data-snap-y="0.001" alt="strawhair6" />
 </div>
-<!-- Pokemon clothing -->
 <div class="top-wrapper" data-tab="pokemon">
-  <img src="poktop1.PNG" class="top-item draggable" alt="poktop1" />
+  <img src="poktop1.PNG" class="top-item draggable" data-tab="pokemon" alt="poktop1" />
 </div>
 <div class="acc-wrapper clothes-carousel" data-tab="pokemon">
   <button class="clothes-arrow clothes-prev">&#8249;</button>
-  <img src="pokacc1.PNG" class="acc-item draggable active" alt="pokacc1" />
-  <img src="pokacc2.PNG" class="acc-item draggable" alt="pokacc2" />
-  <img src="pokacc3.PNG" class="acc-item draggable" alt="pokacc3" />
-  <img src="pokacc4.PNG" class="acc-item draggable" alt="pokacc4" />
-  <img src="pokacc5.PNG" class="acc-item draggable" alt="pokacc5" />
+  <img src="pokacc1.PNG" class="acc-item draggable active" data-tab="pokemon" alt="pokacc1" />
+  <img src="pokacc2.PNG" class="acc-item draggable" data-tab="pokemon" alt="pokacc2" />
+  <img src="pokacc3.PNG" class="acc-item draggable" data-tab="pokemon" alt="pokacc3" />
+  <img src="pokacc4.PNG" class="acc-item draggable" data-tab="pokemon" alt="pokacc4" />
+  <img src="pokacc5.PNG" class="acc-item draggable" data-tab="pokemon" alt="pokacc5" />
+  <button class="clothes-arrow clothes-next">&#8250;</button>
+</div>
+<div class="acc-wrapper clothes-carousel" data-tab="strawberry" style="display:none">
+  <button class="clothes-arrow clothes-prev">&#8249;</button>
+  <img src="strawacc1.PNG" class="acc-item draggable active" data-tab="strawberry" data-scale="0.9" data-snap-y="0.01" alt="strawacc1" />
+  <img src="strawacc2.PNG" class="acc-item draggable" data-tab="strawberry" data-scale="0.9" data-snap-y="0.02" alt="strawacc2" />
+  <img src="strawacc3.PNG" class="acc-item draggable" data-tab="strawberry" data-scale="0.2" data-snap-x="0.1" data-snap-y="0.01" alt="strawacc3" />
+  <img src="strawacc4.PNG" class="acc-item draggable" data-tab="strawberry" data-scale="0.4" data-snap-x="0.2" data-snap-y="0.01" alt="strawacc4" />
+  <img src="strawacc5.PNG" class="acc-item draggable" data-tab="strawberry" data-scale="1.3" data-snap-y="0.001"  alt="strawacc5" />
   <button class="clothes-arrow clothes-next">&#8250;</button>
 </div>
 <div class="pokbag-wrapper" data-tab="pokemon">
-  <img src="pokbag1.png" class="pokbag-item draggable" style="top:0px;left:0px;z-index:4" data-bag="1" alt="pokbag1" />
-  <img src="pokbag2.png" class="pokbag-item draggable" style="top:0px;left:55px;z-index:3" data-bag="2" alt="pokbag2" />
-  <img src="pokbag3.png" class="pokbag-item draggable" style="top:0px;left:110px;z-index:2; width: 180px;" data-bag="3" alt="pokbag3" />
-  <img src="pokbag4.png" class="pokbag-item draggable" style="top:0px;left:165px;z-index:1; width: 200px;" data-bag="4" alt="pokbag4" />
+  <img src="pokbag1.png" class="pokbag-item draggable" style="top:0px;left:0px;z-index:4" data-tab="pokemon" data-bag="1" alt="pokbag1" />
+  <img src="pokbag2.png" class="pokbag-item draggable" style="top:0px;left:55px;z-index:3" data-tab="pokemon" data-bag="2" alt="pokbag2" />
+  <img src="pokbag3.png" class="pokbag-item draggable" style="top:0px;left:110px;z-index:2; width: 180px;" data-tab="pokemon" data-bag="3" alt="pokbag3" />
+  <img src="pokbag4.png" class="pokbag-item draggable" style="top:0px;left:165px;z-index:1; width: 200px;" data-tab="pokemon" data-bag="4" alt="pokbag4" />
 </div>
 <div class="dress-wrapper" data-tab="pokemon">
-  <img src="pokdress1.png" class="dress-item dress-1 draggable" style="top:0px;left:0px;z-index:4" alt="pokdress1" />
-  <img src="pokdress2.png" class="dress-item dress-2 draggable" style="top:0px;left:50px;z-index:3; width:325px;" alt="pokdress2" />
-  <img src="pokdress3.PNG" class="dress-item dress-3 draggable" style="top:0px;left:100px;z-index:2" alt="pokdress3" />
-  <img src="pokdress4.PNG" class="dress-item dress-4 draggable" style="top:0px;left:150px;z-index:1" alt="pokdress4" />
+  <img src="pokdress1.png" class="dress-item dress-1 draggable" style="top:0px;left:0px;z-index:4" data-tab="pokemon" alt="pokdress1" />
+  <img src="pokdress2.png" class="dress-item dress-2 draggable" style="top:0px;left:50px;z-index:3; width:325px;" data-tab="pokemon" alt="pokdress2" />
+  <img src="pokdress3.PNG" class="dress-item dress-3 draggable" style="top:0px;left:100px;z-index:2" data-tab="pokemon" alt="pokdress3" />
+  <img src="pokdress4.PNG" class="dress-item dress-4 draggable" style="top:0px;left:150px;z-index:1" data-tab="pokemon" alt="pokdress4" />
 </div>
 <div class="shorts-wrapper" data-tab="pokemon">
-  <img src="pokshort1.PNG" class="shorts-item draggable" alt="pokshort1" />
+  <img src="pokshort1.PNG" class="shorts-item draggable" data-tab="pokemon" alt="pokshort1" />
 </div>
-<!-- Strawberry Shortcake clothing — add images in ss/ folder -->
-<div class="top-wrapper" data-tab="strawberry" style="display:none">
-  <!-- <img src="ss/top1.png" class="top-item draggable" alt="ss-top1" /> -->
+<div class="shoe-wrapper clothes-carousel" data-tab="pokemon">
+  <button class="clothes-arrow clothes-prev">&#8249;</button>
+  <img src="pokshoe1.PNG" class="shoe-item pok-s1 draggable active" data-tab="pokemon" data-scale="0.40" data-snap-y="0.85" alt="pokshoe1" />
+  <img src="pokshoe2.PNG" class="shoe-item pok-s2 draggable" data-tab="pokemon" data-scale="0.40" data-snap-y="0.85" alt="pokshoe2" />
+  <img src="pokshoe3.PNG" class="shoe-item pok-s3 draggable" data-tab="pokemon" data-scale="0.40" data-snap-y="0.85" alt="pokshoe3" />
+  <img src="pokshoe4.PNG" class="shoe-item pok-s4 draggable" data-tab="pokemon" data-scale="0.40" data-snap-y="0.85" alt="pokshoe4" />
+  <img src="pokshoe5.PNG" class="shoe-item pok-s5 draggable" data-tab="pokemon" data-scale="0.40" data-snap-y="0.85" alt="pokshoe5" />
+  <button class="clothes-arrow clothes-next">&#8250;</button>
+</div>
+<div class="shoe-wrapper" data-tab="strawberry" style="display:none">
+  <img src="strawshoe1.PNG" class="shoe-item straw-s1 draggable active" data-tab="strawberry" data-scale="0.40" data-snap-y="0.9" alt="strawshoe1" />
+  <img src="strawshoe2.PNG" class="shoe-item straw-s2 draggable" data-tab="strawberry" data-scale="0.40" data-snap-y="0.9" alt="strawshoe2" />
+  <img src="strawshoe3.PNG" class="shoe-item straw-s3 draggable" data-tab="strawberry" data-scale="0.40" data-snap-y="0.88" alt="strawshoe3" />
+  <img src="strawshoe4.PNG" class="shoe-item straw-s4 draggable" data-tab="strawberry" data-scale="0.40" data-snap-y="0.81" data-snap-x="0.52" alt="strawshoe4" />
+  <img src="strawshoe5.PNG" class="shoe-item straw-s5 draggable" data-tab="strawberry" data-scale="0.40" data-snap-y="0.89" data-snap-x="0.53" alt="strawshoe5" />
+  <img src="strawshoe6.PNG" class="shoe-item straw-s6 draggable" data-tab="strawberry" data-scale="0.40" data-snap-y="0.83" data-snap-x="0.52" alt="strawshoe6" />
 </div>
 <div class="dress-wrapper" data-tab="strawberry" style="display:none">
-  <!-- <img src="ss/dress1.png" class="dress-item draggable" alt="ss-dress1" /> -->
+  <img src="strawdress1.PNG" class="dress-item straw-d1 draggable active" data-tab="strawberry" data-scale="0.45" data-snap-y="0.372" alt="strawdress1" />
+  <img src="strawdress2.PNG" class="dress-item straw-d2 draggable" data-tab="strawberry" data-scale="0.45" data-snap-y="0.372" alt="strawdress2" />
+  <img src="strawdress3.PNG" class="dress-item straw-d3 draggable" data-tab="strawberry" data-scale="0.42" data-snap-y="0.372" alt="strawdress3" />
+  <img src="strawdress4.PNG" class="dress-item straw-d4 draggable" data-tab="strawberry" data-scale="0.42" data-snap-y="0.364" alt="strawdress4" />
+  <img src="strawdress5.PNG" class="dress-item straw-d5 draggable" data-tab="strawberry" data-scale="0.47" data-snap-y="0.372" data-snap-x="0.53" alt="strawdress5" />
+  <img src="strawdress6.PNG" class="dress-item straw-d6 draggable" data-tab="strawberry" data-scale="0.45" data-snap-y="0.372" alt="strawdress6" />
 </div>
-<!-- Gachiakuta clothing — add images in g/ folder -->
-<div class="top-wrapper" data-tab="gachiakuta" style="display:none">
-  <!-- <img src="g/top1.png" class="top-item draggable" alt="g-top1" /> -->
-</div>
-<div class="dress-wrapper" data-tab="gachiakuta" style="display:none">
-  <!-- <img src="g/dress1.png" class="dress-item draggable" alt="g-dress1" /> -->
-</div>
-<!-- Magical Doremi clothing — add images in md/ folder -->
-<div class="top-wrapper" data-tab="doremi" style="display:none">
-  <!-- <img src="md/top1.png" class="top-item draggable" alt="md-top1" /> -->
-</div>
-<div class="dress-wrapper" data-tab="doremi" style="display:none">
-  <!-- <img src="md/dress1.png" class="dress-item draggable" alt="md-dress1" /> -->
-</div>
-<!-- <div class="pants-wrapper">
-  <img src="dimg/pants1.png" class="pants-item draggable" alt="pants1" />
-  <img src="dimg/pants2.png" class="pants-item draggable" alt="pants2" />
-  <img src="dimg/pants3.png" class="pants-item draggable" alt="pants3" />
-</div>
-<div class="skirt-wrapper">
-  <img src="skirt1.PNG" class="skirt-item draggable" alt="skirt1" />
-  <img src="dimg/skirt2.png" class="skirt-item draggable" alt="skirt2" />
-  <img src="dimg/skirt3.png" class="skirt-item draggable" alt="skirt3" />
-</div>
-<div class="shorts-wrapper">
-  <img src="dimg/shorts.png" class="shorts-item draggable" alt="shorts" />
-</div> -->
-<!-- <div class="sock1-wrapper">
-  <img src="dimg/sock1.png" class="sock1-item draggable" alt="sock1" />
-</div>
-<div class="glasses-wrapper">
-  <img src="dimg/glasses.png" class="glasses-item draggable" alt="glasses" />
-</div>
-<div class="sock-wrapper">
-  <img src="dimg/sock2.png" class="sock-item draggable" alt="sock2" />
-  <img src="dimg/sock3.png" class="sock-item draggable" alt="sock3" />
-</div>
-<div class="shoe-wrapper">
-  <img src="dimg/shoe1.png" class="shoe-item draggable" alt="shoe1" />
-  <img src="dimg/shoe2.png" class="shoe-item draggable" alt="shoe2" />
-  <img src="dimg/shoe3.png" class="shoe-item draggable" alt="shoe3" />
-  <img src="dimg/shoe4.png" class="shoe-item draggable" alt="shoe4" />
-</div>
-<div class="bag-wrapper">
-  <img src="dimg/bag1.png" class="bag-item draggable" alt="bag1" />
-  <img src="dimg/bag2.png" class="bag-item draggable" alt="bag2" />
-  <img src="dimg/bag3.png" class="bag-item draggable" alt="bag3" />
-  <img src="dimg/bag4.png" class="bag-item draggable" alt="bag4" />
-</div>
-<div class="hp-wrapper">
-  <img src="hp1.PNG" class="hp-item draggable" alt="hp1" />
-  <img src="hp2.png" class="hp-item draggable" alt="hp2" />
-  <img src="hp3.png" class="hp-item draggable" alt="hp3" />
-  <img src="hp4.png" class="hp-item draggable" alt="hp4" />
-  <img src="hp5.png" class="hp-item draggable" alt="hp5" />
-</div> -->
-<!-- <div class="acc-wrapper">
-  <img src="acc1.png" class="acc-item draggable" alt="acc1" />
-  <img src="acc2.png" class="acc-item draggable" alt="acc2" />
-  <img src="acc3.png" class="acc-item draggable" alt="acc3" />
-</div>  -->
-
-<!-- <img src="reset-btn.png" id="reset-btn" alt="Reset Button" /> -->
 <div class="text">
 </div>
 
